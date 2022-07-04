@@ -18,7 +18,12 @@ sudo chmod 777 -R /tmp/rohjans
 yes | sudo pacman -Syu;
 
 # Remove pre installed apps
-yes | sudo pacman -R firefox-gnome-theme-maia totem gnome-boxes fragments geary lollypop
+yes | sudo pacman -R firefox-gnome-theme-maia
+yes | sudo pacman -R totem
+yes | sudo pacman -R gnome-boxes
+yes | sudo pacman -R fragments
+yes | sudo pacman -R geary
+yes | sudo pacman -R lollypop
 
 # Install most apps
 yes | sudo pacman -S firefox audacity bitwarden discord filezilla gnome-tweaks gedit gimp gparted gthumb htop lutris mysql-workbench virtualbox qbittorrent remmina gnome-screenshot solaar virt-manager vlc pigz appimagelauncher nvidia-utils virt-manager git onlyoffice-desktopeditors gnome-terminal docker python python-pip curl --noconfirm
