@@ -7,6 +7,9 @@
 config_path=$PWD"/config"
 shell_user="raul"
 
+# /*----------------------*/
+
+
 # Create temp folders
 sudo mkdir /tmp/rohjans
 sudo chmod 777 -R /tmp/rohjans
@@ -23,6 +26,8 @@ yes | sudo pacman -S firefox audacity bitwarden discord filezilla gnome-tweaks g
 yes | sudo pamac install --no-confirm anydesk-bin github-desktop-bin gnome-sound-recorder-git google-chrome gwe minecraft-launcher mpv-amd-full-git openvpn3 pavucontrol-git postman-bin spotify sublime-text-4 teams-for-linux zoom zpaq
 
 modprobe vboxdrv
+sudo groupadd docker
+sudo usermod -aG docker $USER
 
 # Install app images
 # --Houdoku
