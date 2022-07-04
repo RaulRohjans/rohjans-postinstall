@@ -87,6 +87,6 @@ cp $config_path"/wallpapers/background" ~/.config
 sed -i 's/raul/'$shell_user'/g' $config_path"/dconf-settings.ini"
 cat $config_path"/dconf-settings.ini" | dconf load /
 
-# Clean files & reboot
+# Clean up
 sudo rm -rf /tmp/rohjans
-sudo reboot now
+printf "\n\n----------------------------\nPlease reboot your system!\n")
